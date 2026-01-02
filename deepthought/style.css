@@ -1,0 +1,173 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #f5f6fa;
+}
+
+/* HEADER */
+.topbar {
+  height: 56px;
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 18px;
+  border-bottom: 1px solid #ddd;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.logo img {
+  height: 34px;
+}
+
+.actions span {
+  margin-right: 10px;
+}
+
+.submit {
+  background: #1a5cff;
+  color: #fff;
+  border: none;
+  padding: 6px 14px;
+  border-radius: 6px;
+
+}
+.header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+
+/* JOURNEY BOARD */
+.journey {
+  position: fixed;
+  top: 56px;
+  left: 0;
+  width: 260px;
+  height: 100%;
+  background: #fff;
+  box-shadow: 2px 0 6px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease;
+  z-index: 10;
+}
+
+.journey.closed {
+  transform: translateX(-100%);
+}
+
+.journey-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 14px;
+  border-bottom: 1px solid #ddd;
+  font-weight: bold;
+}
+
+.journey ul {
+  list-style: none;
+  padding: 16px;
+}
+
+.journey li {
+  margin-bottom: 12px;
+}
+
+.journey-toggle {
+  position: fixed;
+  top: 120px;
+  left: 0;
+  z-index: 11;
+}
+
+/* MAIN */
+.wrapper {
+  padding: 20px;
+  margin-left: 40px;
+}
+
+.info {
+  background: #eef2f9;
+  padding: 16px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+/* GRID */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 22px;
+}
+
+/* CARD */
+.card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+  overflow: hidden;
+}
+
+.card-header {
+  background: #000;
+  color: #fff;
+  padding: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.card-body {
+  padding: 14px;
+}
+
+.card.collapsed .card-body {
+  display: none;
+}
+
+.desc {
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+
+/* THREADBUILD UI */
+.thread-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+.thread-box {
+  background: #f7f7f7;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.thread-box input {
+  width: 100%;
+  border: none;
+  background: transparent;
+}
+
+/* 4SA */
+.accordion {
+  border-top: 1px solid #ddd;
+  padding-top: 10px;
+}
+
+iframe {
+  width: 100%;
+  height: 260px;
+  border-radius: 8px;
+}
